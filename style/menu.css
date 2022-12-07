@@ -1,0 +1,185 @@
+* {
+  margin: 0px;
+}
+
+body {
+    color: white;    /* Couleur de base  */
+    font-family: "Segoe UI", sans-serif;    /* Police d'ecriture de base */
+}
+
+label {
+  /* Pour être sûrs que toutes les étiquettes ont même taille et sont correctement alignées */
+  display: inline-block;
+  width: 350px;
+  padding: 0% 0% 0.5% 0%;
+}
+
+
+
+input, textarea, select {
+  /* Pour s'assurer que tous les champs texte ont la même police.
+     Par défaut, les textarea ont une police monospace */
+  font: 1em sans-serif;
+
+  /* Pour que tous les champs texte aient la même dimension */
+  width: 400px;
+  box-sizing: border-box;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  text-align: center;
+
+  /* Pour harmoniser le look & feel des bordures des champs texte */
+  border : 3px solid white;
+  border-radius: 40px;
+}
+
+input:focus, textarea:focus, select:focus {
+  /* Pour souligner légèrement les éléments actifs */
+  border-color: black;
+}
+
+textarea {
+  /* Pour aligner les champs texte multi‑ligne avec leur étiquette */
+  vertical-align: top;
+
+  /* Pour donner assez de place pour écrire du texte */
+  height: 7em;
+}
+
+select {
+    border: 1px solid black; /*taille et couleur de la bordure*/
+}
+
+h1 {
+    padding: 0 0 2rem;
+    font-size: 1.5rem;    /* Taille de la police */
+    font-weight: 400;    /* Epaisseur de la police */
+}
+
+h2 {
+    padding: 0 0 2rem;
+    text-align: center;
+
+}
+
+h3 {
+    text-align: center;    /* Alignement du texte au centre */
+    position: relative;
+    padding: 1rem 0rem 0rem 0rem;
+    margin: 2rem 1.5rem;
+    color: white;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+h4 {
+    position: relative;
+    text-transform: uppercase; /*Majuscule*/
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    background: linear-gradient(to top, rgba(255, 0, 0, 0.7) 0%, rgba(255, 0, 0, 0.7) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    transition: background-size .5s;
+    /*effet de soulignement avec dégradé et transition*/
+}
+
+h4:hover { /*active l'effet de transition*/
+    background-size: 100% 100%;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+header {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.75) -10%,rgba(0,0,0,0) 100%); /*effet de dégradé*/
+    padding: 2rem;
+    font-size: 1.25rem;
+}
+
+nav {
+    margin-left: 3%;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline-flex;
+}
+
+input:invalid { /*quand le champ est invalide*/
+    border: 1px solid black;
+}
+
+input:valid { /*quand le champ est valide*/
+    border: 2px solid green;
+}
+
+button {
+    display : block;
+    border-radius: 20px;
+    background-color : transparent;
+    border : 3px solid #fff;
+    line-height: 55px;
+    font-size: 1.3rem;
+    font-weight: 400;
+    width: 200px;
+    color : white;
+    margin : 1.5rem auto;
+}
+
+
+button:hover { /*quand la souris passe dessus*/
+    background: rgba(255, 0, 0, 0.4);
+    border : 3px solid red;
+    color : white;
+}
+
+footer {
+    background-image: linear-gradient(to top, rgba(0,0,0,0.75) -10%,rgba(0,0,0,0) 100%); /*donne un effet de dégradé*/
+    padding-top: 2%;
+    bottom: 0;
+}
+
+footer a {
+    color: transparent;
+    padding-right: 3%;
+    padding-left: 3%;
+}
+
+footer p {
+    text-align: center;    /* Alignement du texte au centre */
+    color: white;
+    padding-bottom: 2%;
+    font-size: 1.1rem;
+}
+
+.content { /*parametres generaux de l'affichage des backgrounds*/
+    background-attachment: fixed;
+    min-height: 700px;
+    background: rgba(0, 0, 0, 0.6);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; 
+}
+
+#form { /* permet de gérer la transparence du footer*/
+    background: rgba(0, 0, 0, 0);
+}
+
+#content1 {
+    background-image: url("../image/background_4.jpg");
+}
+
+#content2 {
+    background-image: url("../image/background_5.jpg");
+}
+
+#content3 {
+    background-image: url("../image/background_7.jpg");
+}

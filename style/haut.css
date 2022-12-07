@@ -1,0 +1,155 @@
+* {
+  margin: 0px;
+}
+
+body {
+    color: white; /* Couleur de base  */
+    font-family: "Segoe UI", sans-serif; /* Police d'ecriture de base */
+    text-align: center; /* Alignement du texte au centre */
+}
+
+h1 {
+    padding: 20% 20% 0% 20%;    /* Definition de l'emplacement du titre */
+    font-size: 2.8rem;    /* Taille de la police */
+    font-weight: 400;    /* Epaisseur de la police */
+    line-height: 1;    /* Taille police ?? */
+}
+
+h2 {
+    padding: 8% 20% 0% 20%;    /* Definition de l'emplacement du titre */
+    font-size: 2.8rem;    /* Taille de la police */
+    font-weight: 400;    /* Epaisseur de la police */
+    line-height: 1;    /* Taille police ?? */
+}
+
+h3 {
+    position: relative;
+    padding: 2rem 0 0.5rem;
+    margin: 0 1.5rem;
+    color: white;
+    font-weight: 400;
+    text-transform: uppercase; /*MAJUSCUUUULE*/
+    background: linear-gradient(to top, rgba(255, 0, 0, 0.7) 0%, rgba(255, 0, 0, 0.7) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    transition: background-size .5s;
+    /*effet de soulignement avec dégradé et transition*/
+}
+
+h3:hover{ /*active l'effet de transition*/
+    background-size: 100% 100%;
+}
+
+h4 {
+    padding: 2rem 0 0.5rem;
+    margin: 0 1.5rem;
+    position: relative;
+    color: white;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+p {
+    padding: 1% 35% 0% 35%;    /* Definition de l'emplacement du sous-titre */
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+header {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.75) -10%,rgba(0,0,0,0) 100%); /*donne un effet de dégradé*/
+    padding: 1.5rem 0 5rem;
+    font-size: 1.25rem;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline-flex;
+}
+
+footer { /* footer */
+    background: rgba(0, 0, 0, 0.5); /*Gere la couleur et l'effet de transparence*/
+    padding-top: 2%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("../image/footer.png");
+}
+
+#footer_background {
+    background-size: cover;
+    background-image: url("../image/background_7.jpg");
+}
+
+footer a {
+    color: white;
+    padding-right: 3%;
+    padding-left: 3%;
+}
+
+footer p {
+  text-align: center;    /* Alignement du texte au centre */
+  color: white;
+  padding-bottom: 2%;
+  font-size: 1.1rem;
+}
+
+.content { /*parametres generaux de l'affichage des backgrounds*/
+    background-attachment: fixed;
+    position: relative;
+    height: 850px;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.3);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#logo {
+    font-size: 2.8rem;    /* Taille de la police */
+    font-weight: 400;    /* Epaisseur de la police */
+    line-height: 1;
+}
+#content1 {
+    background-image: url("../image/background_1.jpg");
+}
+#content2 {
+    background-image: url("../image/background_2.jpg");
+}
+#content3 {
+    background-image: url("../image/background_3.jpg");
+}
+
+.bouton { /*parametres generaux de l'affichage des boutons*/
+    text-align: center;
+    display: block;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 3px solid white;
+    line-height: 45px;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.bouton:hover { /*Quand la souris passe sur les boutons*/
+    background: rgba(255, 0, 0, 0.4);
+    border : 3px solid red;
+    color : white;
+}
+
+#petitbouton {
+    margin : 0 auto;
+    width: 250px;
+    height: 50px;
+}
+
+#grandbouton {
+    margin : 1rem 1.5rem;
+    width: 250px;
+    height: 50px;
+}
